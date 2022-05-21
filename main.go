@@ -89,7 +89,6 @@ func findAndRemoveEmptyItems(cpath string, fileMap *[]emptyFileMap, deleteF bool
 	files := currentPathItemList(cpath)
 	for _, f := range files {
 		if f.Size() == 0 && !f.IsDir() {
-			fmt.Println(f.Name())
 			emptyRemover(f, cpath, deleteF, fileMap)
 		} else if recurDel && f.IsDir() {
 			nonEmptyDirPath := path.Join([]string{cpath, f.Name()}...)
