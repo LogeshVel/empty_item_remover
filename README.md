@@ -69,9 +69,21 @@ empty-remover -p . -r -f
 ```
 
 ### Download and Installation:
-- Go to the release page.
+- Go to the [release page.](https://github.com/LogeshVel/empty_item_remover/releases)
 - Download the ZIP file corresponding to the OS.
 - Extract the ZIP file and then move the bin file to **C:/WINDOWS** in windows, **/usr/local/bin** in Linux
+
+#### In Windows
+After unzipping the zip file that you have downloaded, open the command prompt with the administrative privilege (Run as Administrator) and navigate to the path where the  **empty-remover.exe** located (extracted path) then execute the below command.
+```
+move empty-remover.exe "C:/WINDOWS"
+```
+
+#### In Linux
+Execute the below cmd in the path where the **empty-remover** file locates
+```
+sudo mv empty-remover /usr/local/bin
+```
 
 _Usage based on the requirement:_
 ```
